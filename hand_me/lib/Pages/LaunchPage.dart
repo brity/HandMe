@@ -8,6 +8,11 @@ class launchPage extends StatelessWidget{
     return new Material(
       color: Colors.orange,
       child: new InkWell(
+
+        //onLongPress: ,    //To be implemented : special CaiDan
+
+        onTap: () => print("User tapped launch screen."),
+
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
