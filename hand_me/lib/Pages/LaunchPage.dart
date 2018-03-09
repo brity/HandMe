@@ -6,13 +6,13 @@ class launchPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return new Material(
-      color: Colors.pinkAccent,
+      color: Colors.orange,
       child: new InkWell(
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Text("HandMe",
-                style: new TextStyle(color: Colors.yellow, fontSize: 50.0, fontWeight: FontWeight.w800))
+                style: new TextStyle(color: Colors.white, fontSize: 50.0, fontWeight: FontWeight.w800))
 
           ],
         ),
