@@ -17,7 +17,7 @@ class launchPage extends StatelessWidget{
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Text("HandMe",
-                style: new TextStyle(color: Colors.white, fontSize: 50.0, fontWeight: FontWeight.w800))
+                style: new TextStyle(color: Colors.white, fontSize: 50.0, fontWeight: FontWeight.w900))
 
           ],
         ),
