@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'CameraPage.dart';
 
 class launchPage extends StatelessWidget{
   //landing page for HandMe (will contain a logo and dismiss on tap)
@@ -11,7 +11,8 @@ class launchPage extends StatelessWidget{
 
         //onLongPress: ,    //To be implemented : special CaiDan
 
-        onTap: () => print("User tapped launch screen."),
+        onTap: () => Navigator.of(context).pushAndRemoveUntil(new MaterialPageRoute(builder: (BuildContext context) => new CameraPage()),
+                                                          (Route route) => route == null),
 
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
