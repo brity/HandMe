@@ -11,8 +11,7 @@ class launchPage extends StatelessWidget{
 
         //onLongPress: ,    //To be implemented : special CaiDan
 
-        onTap: () => Navigator.of(context).pushAndRemoveUntil(new MaterialPageRoute(builder: (BuildContext context) => new CameraPage()),
-                                                          (Route route) => route == null),
+        onTap: () => Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new CameraPage())),
 
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
