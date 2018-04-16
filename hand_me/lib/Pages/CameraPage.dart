@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
-import 'dart:async';
-import 'dart:io';
-
-
-List<CameraDescription> cameras;
+import 'package:hand_me/main.dart';
 
 
 class CameraPage extends StatefulWidget {
@@ -19,7 +15,8 @@ class CameraPageState extends State<CameraPage> {
   @override
   void initState() {
     super.initState();
-    controller = new CameraController(cameras[0], ResolutionPreset.medium);
+
+    controller = new CameraController(cameras[1], ResolutionPreset.medium);
     controller.initialize().then((_) {
       if (!mounted) {
         return;
