@@ -125,7 +125,8 @@ class _CameraExampleHomeState extends State<CameraExampleHome> {
             padding: const EdgeInsets.all(5.0),
             child: new Center(
               child: new AspectRatio(
-                aspectRatio: controller.value.aspectRatio,
+                //aspectRatio: controller.value.aspectRatio,
+                aspectRatio: 2.0,
                 child: new CameraPreview(controller),
               ),
             ),
